@@ -4,9 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
-group :development, :test do
-  gem 'sqlite3'
-end
+gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -52,10 +50,13 @@ end
 gem 'refinerycms', '~> 3.0'
 
 # Optionally, specify additional Refinery CMS Extensions here:
-gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
-gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
-gem 'refinerycms-authentication-devise', '~> 1.0'
+gem 'refinerycms-acts-as-indexed'
+gem 'refinerycms-wymeditor'
+gem 'refinerycms-authentication-devise'
+gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
+gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
+
 #  gem 'refinerycms-blog', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-inquiries', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
-#  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
+#gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
